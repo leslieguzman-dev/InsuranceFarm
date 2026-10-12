@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Farm | Operations Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Insurance Farm</h1>
+        <p>Insurance Operations Platform</p>
+    </header>
+
+    <nav>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#performance">Performance</a>
+        <a href="#requests">Service Requests</a>
+    </nav>
+
+    <main>
+ <!-----KPI cards = a measurement that helps a buisness understand how its performing----------------------------------------------------------->       
+        <section id="dashboard">
+            <h2>Operations Dashboard</h2>
+            <p>Here's an overview of your service operations.</p>
+
+            <div class="kpi-container">
+
+                <div class="kpi-card">
+                    <p class="kpi-label">Open Requests</p>
+                    <h3>128</h3>
+                    <p class="kpi-description">Requests awaiting completion</p>
+                </div>
+
+                <div class="kpi-card">
+                    <p class="kpi-label">Unresolved</p>
+                    <h3>42</h3>
+                    <p class="kpi-description">Requests still in progress</p>
+                </div>
+
+                <div class="kpi-card">
+                    <p class="kpi-label">Avg. Resolution</p>
+                    <h3>18.4 hrs</h3>
+                    <p class="kpi-description">Average time to resolve</p>
+                </div>
+
+                <div class="kpi-card">
+                    <p class="kpi-label">Resolved</p>
+                    <h3>86</h3>
+                    <p class="kpi-description">Requests completed</p>
+                </div>
+
+            </div>
+        </section>
+ <!-----KPI cards = a measurement that helps a buisness understand how its performing------------------------------------------------------------> 
+
+        <section id="performance">
+            <h2>Performance Overview</h2>
+            <p>Customer service and operational metrics will appear here.</p>
+        </section>
+
+<!------Recent Service Request Table------------------------------------------------------------------------------------------------------------->
+        <section id="requests">
+            <h2>Recent Service Requests</h2>
+            <p>Review and track customer service activity.</p>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ticket ID</th>
+                            <th>Subject</th>
+                            <th>Category</th>
+                            <th>Status</th>
+                            <th>Priority</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>IF-1001</td>
+                            <td>Billing question</td>
+                            <td>Billing</td>
+                            <td><span class="status open">Open</span></td>
+                            <td><span class="priority high">High</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>IF-1002</td>
+                            <td>Policy update</td>
+                            <td>Policy</td>
+                            <td><span class="status progress">In Progress</span></td>
+                            <td><span class="priority medium">Medium</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>IF-1003</td>
+                            <td>Claims inquiry</td>
+                            <td>Claims</td>
+                            <td><span class="status resolved">Resolved</span></td>
+                            <td><span class="priority low">Low</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>IF-1004</td>
+                            <td>Policy cancellation</td>
+                            <td>Retention</td>
+                            <td><span class="status open">Open</span></td>
+                            <td><span class="priority high">High</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>IF-1005</td>
+                            <td>Payment issue</td>
+                            <td>Billing</td>
+                            <td><span class="status progress">In Progress</span></td>
+                            <td><span class="priority medium">Medium</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>InsureFlow | Portfolio Project</p>
+    </footer>
+
+</body>
+</html>
