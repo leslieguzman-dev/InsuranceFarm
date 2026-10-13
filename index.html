@@ -66,6 +66,27 @@
             <h2>Recent Service Requests</h2>
             <p>Review and track customer service activity.</p>
 
+            
+                <div class="table-controls">
+
+                    <input
+                        type="text"
+                        id="ticketSearch"
+                        placeholder="Search by ticket ID or subject..."
+                    >
+
+                    <select id="statusFilter">
+                        <option value="all">All Statuses</option>
+                        <option value="open">Open</option>
+                        <option value="progress">In Progress</option>
+                        <option value="resolved">Resolved</option>
+                    </select>
+
+                </div>
+
+<p id="resultCount" class="result-count"></p>
+
+
             <div class="table-container">
                 <table>
                     <thead>
@@ -127,6 +148,6 @@
     <footer>
         <p>InsureFlow | Portfolio Project</p>
     </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
