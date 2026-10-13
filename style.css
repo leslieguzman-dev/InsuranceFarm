@@ -206,3 +206,55 @@ tbody tr:hover {
     background-color: #E2E8F0;
     color: #475569;
 }
+
+
+/* Search and filter controls */
+.table-controls {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.table-controls input,
+.table-controls select {
+    padding: 12px 14px;
+    border: 1px solid #D5DEE8;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    color: #263445;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.table-controls input {
+    flex: 1;
+    min-width: 0;
+}
+
+.table-controls select {
+    min-width: 160px;
+    cursor: pointer;
+}
+
+.table-controls input:focus,
+.table-controls select:focus {
+    outline: 2px solid #0D9488;
+    outline-offset: 2px;
+}
+
+.result-count {
+    color: #718096;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+@media (max-width: 600px) {
+    .table-controls {
+        flex-direction: column;
+    }
+
+    .table-controls select {
+        width: 100%;
+    }
+}
