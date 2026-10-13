@@ -3,7 +3,7 @@ const searchInput = document.getElementById("ticketSearch");
 const statusFilter = document.getElementById("statusFilter");
 const resultCount = document.getElementById("resultCount");
 
-const tableRows = document.querySelectorAll(
+const tableRows = document.querySelectorAll( 
     "#requests tbody tr"
 );
 
